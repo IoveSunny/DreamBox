@@ -1,0 +1,17 @@
+Source-Makefile: package/webmon-gargoyle/Makefile
+Package: webmon-gargoyle
+Submenu: Web
+Version: 1.0.0-1
+Depends: +iptables-mod-webmon
+Provides: 
+Section: net
+Category: Network
+Title: Init scripts to setup and use iptables webmon module
+Maintainer: Eric Bishop <eric@gargoyle-router.com>
+Source: 
+Type: ipkg
+Description:   Init scripts to setup and use iptables webmon module
+http://www.gargoyle-router.com
+@@
+
+

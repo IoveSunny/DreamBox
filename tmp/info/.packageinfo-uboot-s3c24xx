@@ -1,0 +1,17 @@
+Source-Makefile: package/uboot-s3c24xx/Makefile
+Package: uboot-s3c24xx
+Menu: 1
+Version: 2010.03-1
+Depends: @TARGET_s3c24xx
+Provides: 
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for s3c24xx boards
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: u-boot-2010.03-s3c24xx-openwrt.tar.bz2
+Type: ipkg
+Description: U-Boot for s3c24xx boards
+http://www.denx.de/wiki/U-Boot
+@@
+
+

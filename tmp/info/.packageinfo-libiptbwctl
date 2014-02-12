@@ -1,0 +1,16 @@
+Source-Makefile: package/libiptbwctl/Makefile
+Package: libiptbwctl
+Version: 1.0.0-1
+Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: IPT bandwidth control library
+Maintainer: Eric Bishop <eric@gargoyle-router.com>
+Source: 
+Type: ipkg
+Description:   IPT bandwidth control library
+http://www.gargoyle-router.com
+@@
+
+

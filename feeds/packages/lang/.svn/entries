@@ -1,0 +1,244 @@
+10
+
+dir
+737
+svn://svn.openwrt.org.cn/dreambox/packages_10.03.1/lang
+svn://svn.openwrt.org.cn/dreambox
+
+
+
+2012-07-08T06:47:09.001477Z
+510
+zjhzzyf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74e81aba-36f0-4891-8cfb-1815f9025a0c
+
+python-dbus
+dir
+
+gst-python
+dir
+
+distribute
+dir
+
+perl-compress-bzip2
+dir
+
+luaexpat
+dir
+
+logilab-astng
+dir
+
+python-curl
+dir
+
+psycopg
+dir
+
+perl-html-tagset
+dir
+
+pyxdg
+dir
+
+python-crypto
+dir
+
+egenix-mx
+dir
+
+perl-html-tree
+dir
+
+python-ifconfig
+dir
+
+sqlite3-ruby
+dir
+
+sigscheme
+dir
+
+python-sip
+dir
+
+php4
+dir
+
+luasec
+dir
+
+php5
+dir
+
+php-pear
+dir
+
+php-pear-xmlrpc
+dir
+
+ruby
+dir
+
+pyqt4
+dir
+
+jsonpath
+dir
+
+pygobject
+dir
+
+eggdrop
+dir
+
+pyevent
+dir
+
+perl-html-parser
+dir
+
+logilab-common
+dir
+
+perl-uri
+dir
+
+lsqlite3
+dir
+
+luasql
+dir
+
+pyusb
+dir
+
+cython
+dir
+
+pycairo
+dir
+
+pyyaml
+dir
+
+python2-chardet
+dir
+
+xapian-bindings
+dir
+
+telepathy-python
+dir
+
+pymysql
+dir
+
+perl-www-mechanize
+dir
+
+luafilesystem
+dir
+
+mako
+dir
+
+python-json
+dir
+
+pyserial
+dir
+
+luasocket
+dir
+
+pybluez
+dir
+
+pypcap
+dir
+
+pygtk
+dir
+
+perl-dbi
+dir
+
+php-pear-db
+dir
+
+perl
+dir
+
+kid
+dir
+
+numpy
+dir
+
+python-gnome-desktop2
+dir
+
+perl-lockfile-simple
+dir
+
+python
+dir
+
+tcl
+dir
+
+twisted
+dir
+
+perl-www
+dir
+
+luaprofiler
+dir
+
+perl-www-curl
+dir
+
+yapsnmp
+dir
+
+ipython
+dir
+
+python-cjson
+dir
+
+pyopenssl
+dir
+
+urbi
+dir
+
+luaposix
+dir
+
+erlang
+dir
+
+pysqlite
+dir
+
+jamvm
+dir
+

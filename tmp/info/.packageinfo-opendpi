@@ -1,0 +1,34 @@
+Source-Makefile: package/opendpi/Makefile
+Package: kmod-ipt-opendpi
+Submenu: Netfilter Extensions
+Version: <LINUX_VERSION>+1.3.0-1
+Depends: @!LINUX_2_4  +kmod-ipt-compat-xtables +libpcap
+Provides: 
+Build-Depends: libtool libintl libiconv !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Section: kernel
+Category: Kernel modules
+Title: OpenDPI net netfilter module
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: opendpi-1.3.0.tar.gz
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK CONFIG_NF_CONNTRACK_EVENTS=y	 
+Description: OpenDPI net netfilter module
+@@
+
+Package: iptables-mod-opendpi
+Submenu: Firewall
+Version: 1.3.0-1
+Depends: @!LINUX_2_4 +iptables +kmod-ipt-opendpi +iptables-mod-conntrack
+Provides: 
+Build-Depends: libtool libintl libiconv !BUILD_NLS:libiconv !BUILD_NLS:gettext
+Section: net
+Category: Network
+Title: Extensions for iptables-module-opendpi
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: opendpi-1.3.0.tar.gz
+Type: ipkg
+Description: Extensions for iptables-module-opendpi
+http://www.opendpi.org/
+@@
+
+

@@ -1,0 +1,16 @@
+Source-Makefile: package/mountd/Makefile
+Package: mountd
+Version: 0.1-2.1
+Depends: @LINUX_2_6 @USB_SUPPORT +uci +kmod-usb-storage +kmod-fs-autofs4
+Provides: 
+Section: utils
+Category: Utilities
+Title: OpenWrt automount daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mountd-0.1.tar.bz2
+Type: ipkg
+Description:   openwrt automount daemon
+http://www.openwrt.org
+@@
+
+

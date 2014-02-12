@@ -1,0 +1,16 @@
+Source-Makefile: package/switch/Makefile
+Package: kmod-switch
+Submenu: Other modules
+Version: <LINUX_VERSION>-4
+Depends: @TARGET_brcm_2_4||TARGET_brcm47xx||TARGET_brcm63xx||TARGET_brcm4716
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Switch drivers
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:  This package contains switch drivers for ADM6996L and BCM53XX RoboSwitch.
+@@
+
+

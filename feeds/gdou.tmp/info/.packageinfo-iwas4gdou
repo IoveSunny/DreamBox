@@ -1,0 +1,16 @@
+Source-Makefile: feeds/gdou/iwas4gdou/Makefile
+Package: iwas4gdou
+Version: 1.0-1
+Depends: +libpcap
+Provides: 
+Section: net
+Category: Network
+Title: I was for GDOU 802.1X client program
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iwas4gdou-1.0.tar.gz
+Type: ipkg
+Description:  802.1X client from Guangdong Ocean University
+http://github.com/liuqun/iwas4gdou
+@@
+
+

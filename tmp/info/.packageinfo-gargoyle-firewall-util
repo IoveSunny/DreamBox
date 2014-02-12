@@ -1,0 +1,15 @@
+Source-Makefile: package/gargoyle-firewall-util/Makefile
+Package: gargoyle-firewall-util
+Version: 1.0.0-1
+Depends: +libericstools +uci +libiptbwctl +iptables-mod-filter +iptables-mod-ipopt +iptables-mod-conntrack +iptables-mod-conntrack-extra +iptables-mod-nat +iptables-mod-nat-extra
+Provides: 
+Section: net
+Category: Network
+Title: A couple of shell script routines for firewall initialization
+Maintainer: Eric Bishop <eric@gargoyle-router.com>
+Source: 
+Type: ipkg
+Description: 	A couple of shell script routines for firewall initialization
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: target/linux/atheros/Makefile
+Target: atheros
+Target-Board: atheros
+Target-Kernel: 2.6
+Target-Name: Atheros AR231x/AR5312
+Target-Path: /home/sunny/openwrt/openwrt-dreambox
+Target-Arch: mips
+Target-Arch-Packages: atheros
+Target-Features: gpio jffs2 pci squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mips32 -mtune=mips32 -funit-at-a-time
+Linux-Version: 2.6.32.55
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Atheros SoC boards
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall wpad-mini kmod-madwifi gpioctl swconfig
+

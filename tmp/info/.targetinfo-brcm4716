@@ -1,0 +1,50 @@
+Source-Makefile: target/linux/brcm4716/Makefile
+Target: brcm4716
+Target-Board: brcm4716
+Target-Kernel: 3.0
+Target-Name: Broadcom BCM94716
+Target-Path: /home/sunny/openwrt/openwrt-dreambox
+Target-Arch: mipsel
+Target-Arch-Packages: brcm4716
+Target-Features: squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mips32 -mtune=mips32 -funit-at-a-time
+Linux-Version: 3.0.4
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Broadcom BCM4716-based routers
+	(e.g. ASUS RT-N16/Linksys WRT610nV2/Linksys E3000)
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall kmod-bgmac kmod-switch kmod-diag kmod-brcm-wl kmod-fs-ext4 nvram nas wl wlc
+Target-Profile: None
+Target-Profile-Name: ASUS RT-N16
+Target-Profile-Packages: kmod-usb-core kmod-usb-uhci kmod-usb2 kmod-usb-storage kmod-scsi-core kmod-fs-ext3
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set optimised for ASUS RT-N16
+@@
+
+Target-Profile: E3000v1
+Target-Profile-Name: Linksys E3000 v1
+Target-Profile-Packages: kmod-usb-core kmod-usb-uhci kmod-usb2 kmod-usb-storage kmod-scsi-core kmod-fs-ext3
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set optimized for the E3000 v1
+@@
+
+Target-Profile: WRT610Nv2
+Target-Profile-Name: Linksys WRT610N v2
+Target-Profile-Packages: kmod-usb-core kmod-usb-uhci kmod-usb2 kmod-usb-storage kmod-scsi-core kmod-fs-ext3
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set optimized for the WRT610N v2
+@@
+
+

@@ -1,0 +1,133 @@
+Source-Makefile: target/linux/s5pv210/Makefile
+Target: s5pv210
+Target-Board: s5pv210
+Target-Kernel: 2.6
+Target-Name: Samsung S5PV210
+Target-Path: /home/sunny/openwrt/openwrt-dreambox
+Target-Arch: arm
+Target-Arch-Packages: s5pv210
+Target-Features: jffs2 squashfs
+Target-Depends: 
+Target-Optimization: -O2 -pipe -march=armv7-a -mtune=cortex-a8 -funit-at-a-time -mfpu=vfp -mfloat-abi=softfp
+Linux-Version: 2.6.35.7
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	S5PV210 arm
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall kmod-gpio-dev gpioctl
+Target: s5pv210/tiny210
+Target-Board: s5pv210
+Target-Kernel: 2.6
+Target-Name: TINY210 Development Board
+Target-Path: target/linux/s5pv210
+Target-Arch: arm
+Target-Arch-Packages: s5pv210
+Target-Features: display gpio jffs2 squashfs usb
+Target-Depends: 
+Target-Optimization: -O2 -pipe -march=armv7-a -mtune=cortex-a8 -funit-at-a-time -mfpu=vfp -mfloat-abi=softfp
+Linux-Version: 2.6.35.7
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	TINY210 Development Board
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall kmod-gpio-dev gpioctl
+Target-Profile: qtopia
+Target-Profile-Name: (qtopia)TINY210 Development Board
+Target-Profile-Packages: Tslib Qtopia Filebrowser MurphyPinyin Konqueror libsqlite3 Zbedic SDLPAL
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Packages are set as a qtopia-2.2.0 PDA compatible with the TINY210 Development Board hardware.
+@@
+
+Target-Profile: router
+Target-Profile-Name: (router)TINY210 Development Board
+Target-Profile-Packages: ucitrigger udev wireless-tools  block-hotplug uhttpd wpad wpa-supplicant kmod-usb-core kmod-usb-ohci  kmod-usb-storage kmod-usb-storage-extras kmod-usb2 kmod-fs-ext4 kmod-fs-ext3 kmod-fs-ext2  kmod-fs-vfat kmod-nls-utf8 kmod-nls-cp437  kmod-nls-iso8859-1 openssh-client openssh-client-utils openssh-server luci luci-i18n-chinese luci-sgi-uhttpd luci-app-ddns luci-app-hd-idle luci-app-openvpn luci-app-qos luci-app-samba luci-app-upnp luci-app-ushare luci-app-wol
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set compatible with the TINY210 Development Board hardware as a Router.
+@@
+
+Target-Profile: minimal
+Target-Profile-Name: (minimal)TINY210 Development Board
+Target-Profile-Packages: 
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	None any other Packages(not default) set compatible with the TINY210 Development Board hardware.
+@@
+
+Target-Profile: paroli
+Target-Profile-Name: (paroli)TINY210 Development Board
+Target-Profile-Packages: xserver-xorg xf86-video-glamo xf86-input-tslib enlightenment fso-gsm0710muxd fso-frameworkd fso-gpsd paroli wireless-tools block-hotplug uhttpd wpad wpa-supplicant python python-gzip python-openssl python-shutil python-sqlite3 python-gdbm python-doc
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set with accelerated x11-environment and phone-suite (paroli) in the TINY210 Development Board hardware.
+@@
+
+Target: s5pv210/mini210
+Target-Board: s5pv210
+Target-Kernel: 2.6
+Target-Name: MINI210 Development Board
+Target-Path: target/linux/s5pv210
+Target-Arch: arm
+Target-Arch-Packages: s5pv210
+Target-Features: display gpio jffs2 squashfs usb
+Target-Depends: 
+Target-Optimization: -O2 -pipe -march=armv7-a -mtune=cortex-a8 -funit-at-a-time -mfpu=vfp -mfloat-abi=softfp
+Linux-Version: 2.6.35.7
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	MINI210 Development Board
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall kmod-gpio-dev gpioctl
+Target-Profile: qtopia
+Target-Profile-Name: (qtopia)MINI210 Development Board
+Target-Profile-Packages: Tslib Qtopia Filebrowser MurphyPinyin Konqueror libsqlite3 Zbedic SDLPAL
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Packages are set as a qtopia-2.2.0 PDA compatible with the MINI210 Development Board hardware.
+@@
+
+Target-Profile: router
+Target-Profile-Name: (router)MINI210 Development Board
+Target-Profile-Packages: ucitrigger udev wireless-tools  block-hotplug uhttpd wpad wpa-supplicant kmod-usb-core kmod-usb-ohci  kmod-usb-storage kmod-usb-storage-extras kmod-usb2 kmod-fs-ext4 kmod-fs-ext3 kmod-fs-ext2  kmod-fs-vfat kmod-nls-utf8 kmod-nls-cp437  kmod-nls-iso8859-1 openssh-client openssh-client-utils openssh-server luci luci-i18n-chinese luci-sgi-uhttpd luci-app-ddns luci-app-hd-idle luci-app-openvpn luci-app-qos luci-app-samba luci-app-upnp luci-app-ushare luci-app-wol
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set compatible with the MINI210 Development Board hardware as a Router.
+@@
+
+Target-Profile: minimal
+Target-Profile-Name: (minimal)MINI210 Development Board
+Target-Profile-Packages: 
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	None any other Packages(not default) set compatible with the MINI210 Development Board hardware.
+@@
+
+Target-Profile: paroli
+Target-Profile-Name: (paroli)MINI210 Development Board
+Target-Profile-Packages: xserver-xorg xf86-video-glamo xf86-input-tslib enlightenment fso-gsm0710muxd fso-frameworkd fso-gpsd paroli wireless-tools block-hotplug uhttpd wpad wpa-supplicant python python-gzip python-openssl python-shutil python-sqlite3 python-gdbm python-doc
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set with accelerated x11-environment and phone-suite (paroli) in the MINI210 Development Board hardware.
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: package/block-extroot/Makefile
+Package: block-extroot
+Menu: 1
+Version: 0.0.1-2.1
+Depends: +block-mount @PACKAGE_kmod-ide-core||PACKAGE_kmod-ata-core||PACKAGE_kmod-usb-storage||PACKAGE_kmod-mmc||PACKAGE_kmod-broadcom-sdhc
+Provides: 
+Section: base
+Category: Base system
+Title: root filesystem on secondary storage
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:   Based on the moduluarized preinit and firstboot, adds the option to have
+  the root filesystem on storage other than the jffs or the boot root device.
+  For a squashfs image this package must be installed into the image, not as
+  a package to add later.
+@@
+Config:
+	source "package/block-extroot/Config.in"
+@@
+
+

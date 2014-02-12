@@ -1,0 +1,18 @@
+Source-Makefile: package/comgt/Makefile
+Package: comgt
+Version: 0.32-9
+Depends: +chat +huaweiaktbbo
+Provides: 
+Section: utils
+Category: Utilities
+Title: Option/Vodafone 3G/GPRS control tool
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: comgt.0.32.tgz
+Type: ipkg
+Description:  comgt is a scripting language interpreter useful for establishing 
+ communications on serial lines and through PCMCIA modems as well as GPRS 
+ and 3G datacards.
+http://www.pharscape.org/content/view/46/70/
+@@
+
+

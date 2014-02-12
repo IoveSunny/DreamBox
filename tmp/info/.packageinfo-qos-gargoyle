@@ -1,0 +1,15 @@
+Source-Makefile: package/qos-gargoyle/Makefile
+Package: qos-gargoyle
+Version: 1.0.0-1
+Depends: +tc +ip +kmod-sched +iptables-mod-filter +iptables-mod-ipopt  +iptables-mod-imq +gargoyle-firewall-util
+Provides: 
+Section: net
+Category: Network
+Title: A set of QoS scripts designed for use with Gargoyle Web Interface
+Maintainer: Eric Bishop <eric@gargoyle-router.com>
+Source: 
+Type: ipkg
+Description: 	A set of QoS scripts designed for use with Gargoyle Web Interface
+@@
+
+

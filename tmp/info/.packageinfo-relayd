@@ -1,0 +1,15 @@
+Source-Makefile: package/relayd/Makefile
+Package: relayd
+Version: 2011-02-07-aeb49d61c2a737dc9a89e0558388c25208e5e919
+Depends: +libubox @!LINUX_2_4
+Provides: 
+Section: net
+Category: Network
+Title: Transparent routing / relay daemon
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: relayd-2011-02-07.tar.bz2
+Type: ipkg
+Description: Transparent routing / relay daemon
+@@
+
+

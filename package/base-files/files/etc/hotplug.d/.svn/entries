@@ -1,0 +1,43 @@
+10
+
+dir
+737
+svn://svn.openwrt.org.cn/dreambox/branches/dreambox-EOL/package/base-files/files/etc/hotplug.d
+svn://svn.openwrt.org.cn/dreambox
+
+
+
+2011-11-06T02:23:37.357954Z
+252
+lintel.huang@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74e81aba-36f0-4891-8cfb-1815f9025a0c
+
+usb
+dir
+
+block
+dir
+
+net
+dir
+
+iface
+dir
+
+ieee1394
+dir
+

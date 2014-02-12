@@ -1,0 +1,16 @@
+Source-Makefile: package/mgb-tools/Makefile
+Package: mgb-tools
+Version: 10
+Depends: @TARGET_rdc
+Provides: 
+Section: utils
+Category: Base system
+Title: Utility for change MGB100 settings
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:  This package contains an Utility for change MGB100 redboot settings,E.T.MAC address, 
+ redboot bootcmd.AMIT firmware upgrage tool.
+@@
+
+

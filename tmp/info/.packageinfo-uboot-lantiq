@@ -1,0 +1,20 @@
+Source-Makefile: package/uboot-lantiq/Makefile
+Package: uboot-lantiq
+Menu: 1
+Version: 2009.11.1-1
+Depends: @TARGET_ifxmips
+Provides: 
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Lantiq reference boards
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: u-boot-2009.11.1.tar.bz2
+Type: bin
+Description: U-Boot for Lantiq reference boards
+http://www.denx.de/wiki/U-Boot
+@@
+Config:
+	source "package/uboot-lantiq/Config.in"
+@@
+
+

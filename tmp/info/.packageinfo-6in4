@@ -1,0 +1,17 @@
+Source-Makefile: package/6in4/Makefile
+Package: 6in4
+Version: 10-1
+Depends: +ip +kmod-ipv6 +kmod-sit
+Provides: 
+Section: ipv6
+Category: IPv6
+Title: IPv6-in-IPv4 configuration support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description: Provides support for 6in4 tunnels in /etc/config/network.
+Refer to http://wiki.openwrt.org/doc/uci/network for
+configuration details.
+@@
+
+

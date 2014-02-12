@@ -1,0 +1,17 @@
+Source-Makefile: package/libericstools/Makefile
+Package: libericstools
+Version: 1.0.0-1
+Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Erics Tools
+Maintainer: Eric Bishop <eric@gargoyle-router.com>
+Source: 
+Type: ipkg
+Description: 	A bunch of routines/utilities written by Eric Bishop,
+	a library primarily used in Gargoyle Web Interface for OpenWrt
+http://www.gargoyle-router.com
+@@
+
+

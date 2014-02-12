@@ -1,0 +1,91 @@
+10
+
+dir
+737
+svn://svn.openwrt.org.cn/dreambox/feeds/qpe/libs
+svn://svn.openwrt.org.cn/dreambox
+
+
+
+2013-01-26T01:41:35.027351Z
+648
+richard.nee.cn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74e81aba-36f0-4891-8cfb-1815f9025a0c
+
+libmng
+dir
+
+libSDL
+dir
+
+libSDL_image
+dir
+
+libSDL_mixer
+dir
+
+libSDL_gfx
+dir
+
+libts
+dir
+
+libSDL_vnc
+dir
+
+libSDL_net
+dir
+
+libSDL_sound
+dir
+
+libSDL_rtf
+dir
+
+liblcms
+dir
+
+libsword
+dir
+
+libSDL_ttf
+dir
+
+libopkg
+dir
+
+libxine
+dir
+
+mitab
+dir
+
+libSDL_pango
+dir
+
+libobexftp
+dir
+
+libetpan
+dir
+
+libopenobex
+dir
+
+libSDL_bgrab
+dir
+

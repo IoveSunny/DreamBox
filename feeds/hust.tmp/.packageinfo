@@ -1,0 +1,16 @@
+Source-Makefile: feeds/hust/mentohust/Makefile
+Package: mentohust
+Version: 0.3.1-openwrt20120923
+Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: OpenWRT 802.1X client for RuiJie V2/V3
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: mentohust-0.3.1.tar.gz
+Type: ipkg
+Description: OpenWRT 802.1X client for RuiJie V2/V3
+http://github.com/microcaicai/mentohust
+@@
+
+

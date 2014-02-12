@@ -1,0 +1,41 @@
+Source-Makefile: package/block-mount/Makefile
+Package: block-mount
+Version: 0.1.0-2.1
+Depends: 
+Provides: 
+Section: base
+Category: Base system
+Title: Block device mounting and checking
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:   Scripts used to mount and check block devices (filesystems and swap)
+@@
+
+Package: block-mount-allsupport
+Version: 0.1.0-2.1
+Depends: +blkid +swap-utils +libext2fs +e2fsprogs +ntfs-3g +fdisk +uuidgen +tune2fs +block-hotplug
+Provides: 
+Section: base
+Category: Base system
+Title: mounting support uuid ntfs-3g ext..
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:  block-mount package add blkid swap-utils libext2fs e2fsprogs ntfs-3g fdisk uuidgen tune2fs package
+@@
+
+Package: block-hotplug
+Version: 0.1.0-2.1
+Depends: +block-mount +hotplug2
+Provides: 
+Section: base
+Category: Base system
+Title: Automount and autocheck block devices
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:   Scripts used to automatically check and mount filesystem and/or swap
+@@
+
+

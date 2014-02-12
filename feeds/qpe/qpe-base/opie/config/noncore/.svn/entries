@@ -1,0 +1,67 @@
+10
+
+dir
+737
+svn://svn.openwrt.org.cn/dreambox/feeds/qpe/qpe-base/opie/config/noncore
+svn://svn.openwrt.org.cn/dreambox
+
+
+
+2012-12-24T05:10:39.266371Z
+563
+richard.nee.cn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74e81aba-36f0-4891-8cfb-1815f9025a0c
+
+graphics
+dir
+
+settings
+dir
+
+tools
+dir
+
+todayplugins
+dir
+
+apps
+dir
+
+styles
+dir
+
+net
+dir
+
+applets
+dir
+
+securityplugins
+dir
+
+decorations
+dir
+
+multimedia
+dir
+
+comm
+dir
+
+games
+dir
+

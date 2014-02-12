@@ -1,0 +1,16 @@
+Source-Makefile: package/nvram/Makefile
+Package: nvram
+Version: 7
+Depends: @TARGET_brcm_2_4||@TARGET_brcm47xx||@TARGET_ar71xx||@TARGET_brcm4716
+Provides: 
+Section: utils
+Category: Base system
+Title: Userspace port of the Broadcom NVRAM manipulation tool
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:  This package contains an utility to manipulate NVRAM on Broadcom based devices.
+ It works on both brcm-2.4 and bcm47xx (Linux 2.6) without using the kernel api.
+@@
+
+

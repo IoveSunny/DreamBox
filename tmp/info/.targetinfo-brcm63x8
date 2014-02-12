@@ -1,0 +1,21 @@
+Source-Makefile: target/linux/brcm63x8/Makefile
+Target: brcm63x8
+Target-Board: brcm63x8
+Target-Kernel: 2.6
+Target-Name: Broadcom BCM63x8
+Target-Path: /home/sunny/openwrt/openwrt-dreambox
+Target-Arch: mips
+Target-Arch-Packages: brcm63x8
+Target-Features: atm gpio pci pcmcia squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mips32 -mtune=mips32 -funit-at-a-time
+Linux-Version: 2.6.30.10
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM6328 BCM6358 based devices with DSL Support.
+	(e.g. P-660, RG100A-CA)
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall gpioctl 
+

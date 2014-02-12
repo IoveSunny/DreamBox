@@ -1,0 +1,16 @@
+Source-Makefile: package/firewall/Makefile
+Package: firewall
+Version: 2-34.8
+Depends: +iptables +iptables-mod-conntrack +iptables-mod-nat
+Provides: 
+Section: net
+Category: Base system
+Title: OpenWrt firewall
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Source: 
+Type: ipkg
+Description:  UCI based firewall for OpenWrt
+http://openwrt.org/
+@@
+
+

@@ -1,0 +1,510 @@
+Source-Makefile: package/iptables/Makefile
+Package: iptables
+Menu: 1
+Version: 1.4.6-3.1
+Depends:  +kmod-ipt-core +libip4tc +libxtables
+Provides: 
+Section: net
+Category: Network
+Title: IPv4 firewall administration tool
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPv4 firewall administration tool.
+
+ Matches:
+  - icmp
+  - tcp
+  - udp
+  - comment
+  - limit
+  - mac
+  - multiport
+
+ Targets:
+  - ACCEPT
+  - DROP
+  - REJECT
+  - LOG
+  - TCPMSS
+
+ Tables:
+  - filter
+  - mangle
+
+http://netfilter.org/
+@@
+
+Package: iptables-utils
+Version: 1.4.6-3.1
+Depends: iptables  
+Provides: 
+Section: net
+Category: Network
+Title: iptables save and restore utilities (deprecated)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: This is a dummy package for backwards compatibility reasons.
+Everything that used to be provided by this package is part
+of iptables now.
+http://netfilter.org/
+@@
+
+Package: iptables-mod-conntrack
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-conntrack
+Provides: 
+Section: net
+Category: Network
+Title: Basic connection tracking extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: Basic iptables extensions for connection tracking.
+
+ Matches:
+  - state
+  - conntrack
+
+ Targets:
+  - NOTRACK
+
+ Tables:
+  - raw
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-conntrack-extra
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-conntrack-extra
+Provides: 
+Section: net
+Category: Network
+Title: Extra connection tracking extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: Extra iptables extensions for connection tracking.
+
+ Matches:
+  - connbytes
+  - connmark
+  - recent
+  - helper
+
+ Targets:
+  - CONNMARK
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-extra
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-extra
+Provides: 
+Section: net
+Category: Network
+Title: Other extra iptables extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: Other extra iptables extensions.
+
+ Matches:
+  - condition
+  - owner
+  - physdev (if ebtables is enabled)
+  - pkttype
+  - quota
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-filter
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-filter
+Provides: 
+Section: net
+Category: Network
+Title: Content inspection extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for packet content inspection.
+Includes support for:
+
+ Matches:
+  - layer7
+  - string
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-hashlimit
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-hashlimit
+Provides: 
+Section: net
+Category: Network
+Title: hashlimit matching
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for hashlimit matching
+
+ Matches:
+  - hashlimit
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-connlimit
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-connlimit
+Provides: 
+Section: net
+Category: Network
+Title: connlimit matching
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for  connlimit matching
+
+ Matches:
+  -  connlimit
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-weburl
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-weburl
+Provides: 
+Section: net
+Category: Network
+Title: weburl matching support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions enable weburl matching support
+
+ Matches:
+  - weburl
+http://netfilter.org/
+@@
+
+Package: iptables-mod-webmon
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-webmon
+Provides: 
+Section: net
+Category: Network
+Title: webmon matching support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions enable webmon matching support
+
+ Matches:
+  - webmon
+http://netfilter.org/
+@@
+
+Package: iptables-mod-bandwidth
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-bandwidth
+Provides: 
+Section: net
+Category: Network
+Title: bandwidth matching support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions enable bandwidth matching support
+
+ Matches:
+  - bandwidth
+http://netfilter.org/
+@@
+
+Package: iptables-mod-timerange
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-timerange
+Provides: 
+Section: net
+Category: Network
+Title: timerange matching support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions enable timerange matching support
+
+ Matches:
+  - timerange
+http://netfilter.org/
+@@
+
+Package: iptables-mod-imq
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-imq
+Provides: 
+Section: net
+Category: Network
+Title: IMQ support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extension for IMQ support.
+
+ Targets:
+  - IMQ
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-ipopt
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-ipopt
+Provides: 
+Section: net
+Category: Network
+Title: IP/Packet option extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for matching/changing IP packet options.
+
+ Matches:
+  - dscp
+  - ecn
+  - length
+  - mark
+  - statistic
+  - tcpmss
+  - time
+  - unclean
+  - hl
+  - ttl
+
+ Targets:
+  - DSCP
+  - CLASSIFY
+  - ECN
+  - MARK
+  - HL
+  - TTL
+  - IPID
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-ipsec
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-ipsec
+Provides: 
+Section: net
+Category: Network
+Title: IPsec extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for matching ipsec traffic.
+
+ Matches:
+  - ah
+  - esp
+  - policy
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-ipset
+Version: 1.4.6-3.1
+Depends: iptables  @LINUX_2_6
+Provides: 
+Section: net
+Category: Network
+Title: IPset iptables extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPset iptables extensions.
+
+ Matches:
+  - set
+
+ Targets:
+  - SET
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-nat
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-nat
+Provides: 
+Section: net
+Category: Network
+Title: Basic NAT extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for basic NAT targets.
+
+ Targets:
+  - SNAT
+  - DNAT
+  - MASQUERADE
+
+ Tables:
+  - nat
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-nat-extra
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-nat-extra
+Provides: 
+Section: net
+Category: Network
+Title: Extra NAT extensions
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for extra NAT targets.
+
+ Targets:
+  - MIRROR
+  - NETMAP
+  - REDIRECT
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-iprange
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-iprange
+Provides: 
+Section: net
+Category: Network
+Title: IP range extension
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for matching ip ranges.
+
+ Matches:
+  - iprange
+
+http://netfilter.org/
+@@
+
+Package: iptables-mod-ulog
+Version: 1.4.6-3.1
+Depends: iptables  +kmod-ipt-ulog
+Provides: 
+Section: net
+Category: Network
+Title: user-space packet logging
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: iptables extensions for user-space packet logging.
+
+ Targets:
+  - ULOG
+
+http://netfilter.org/
+@@
+
+Package: ip6tables
+Menu: 1
+Version: 1.4.6-3.1
+Depends: +kmod-ip6tables +libip6tc +libxtables
+Provides: 
+Section: net
+Category: IPv6
+Title: IPv6 firewall administration tool
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPv6 firewall administration tool
+http://netfilter.org/
+@@
+
+Package: ip6tables-utils
+Version: 1.4.6-3.1
+Depends: ip6tables
+Provides: 
+Section: net
+Category: IPv6
+Title: ip6tables save and restore utilities (deprecated)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: This is a dummy package for backwards compatibility reasons.
+Everything that used to be provided by this package is part
+of ip6tables now.
+http://netfilter.org/
+@@
+
+Package: libiptc
+Version: 1.4.6-3.1
+Depends: +libip4tc +libip6tc
+Provides: 
+Section: libs
+Category: Libraries
+Title: IPv4/IPv6 firewall - shared libiptc library (compatibility stub)
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPv4/IPv6 firewall - shared libiptc library (compatibility stub)
+http://netfilter.org/
+@@
+
+Package: libip4tc
+Version: 1.4.6-3.1
+Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: IPv4 firewall - shared libiptc library
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPv4 firewall - shared libiptc library
+http://netfilter.org/
+@@
+
+Package: libip6tc
+Version: 1.4.6-3.1
+Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: IPv6 firewall - shared libiptc library
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPv6 firewall - shared libiptc library
+http://netfilter.org/
+@@
+
+Package: libxtables
+Version: 1.4.6-3.1
+Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: IPv4/IPv6 firewall - shared xtables library
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: iptables-1.4.6.tar.bz2
+Type: ipkg
+Description: IPv4/IPv6 firewall - shared xtables library
+http://netfilter.org/
+@@
+
+

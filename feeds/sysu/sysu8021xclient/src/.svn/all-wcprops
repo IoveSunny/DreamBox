@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src
+END
+README.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src/README.html
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src/configure.ac
+END
+url.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src/url.c
+END
+srun.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src/srun.c
+END
+url.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src/url.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/liuqun/openwrt-clients/!svn/ver/50/trunk/sysu/sysu8021xclient/src/Makefile.am
+END

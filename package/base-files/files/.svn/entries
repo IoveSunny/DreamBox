@@ -1,0 +1,46 @@
+10
+
+dir
+737
+svn://svn.openwrt.org.cn/dreambox/branches/dreambox-EOL/package/base-files/files
+svn://svn.openwrt.org.cn/dreambox
+
+
+
+2012-12-20T08:44:57.195385Z
+561
+lintel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74e81aba-36f0-4891-8cfb-1815f9025a0c
+
+lib
+dir
+
+bin
+dir
+
+usr
+dir
+
+etc
+dir
+
+sbin
+dir
+
+rom
+dir
+

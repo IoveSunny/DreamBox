@@ -1,0 +1,19 @@
+Source-Makefile: target/linux/kirkwood/Makefile
+Target: kirkwood
+Target-Board: kirkwood
+Target-Kernel: 2.6
+Target-Name: Marvell Kirkwood
+Target-Path: /home/sunny/openwrt/openwrt-dreambox
+Target-Arch: arm
+Target-Arch-Packages: kirkwood
+Target-Features: gpio pci targz usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=xscale -funit-at-a-time
+Linux-Version: 2.6.32.27
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall 
+

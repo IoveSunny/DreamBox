@@ -1,0 +1,93 @@
+Source-Makefile: target/linux/s3c64xx/Makefile
+Target: s3c64xx
+Target-Board: s3c64xx
+Target-Kernel: 2.6
+Target-Name: Samsung S3C64xx
+Target-Path: /home/sunny/openwrt/openwrt-dreambox
+Target-Arch: arm
+Target-Arch-Packages: s3c64xx
+Target-Features: jffs2 squashfs yaffs2
+Target-Depends: 
+Target-Optimization: -O2 -pipe -march=armv6zk -mtune=arm1176jzf-s -funit-at-a-time
+Linux-Version: 2.6.36.4
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	S3C64xx arm
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall
+Target: s3c64xx/mini6410
+Target-Board: s3c64xx
+Target-Kernel: 2.6
+Target-Name: Mini6410 Development Board
+Target-Path: target/linux/s3c64xx
+Target-Arch: arm
+Target-Arch-Packages: s3c64xx
+Target-Features: display gpio jffs2 squashfs usb yaffs2
+Target-Depends: 
+Target-Optimization: -O2 -pipe -march=armv6zk -mtune=arm1176jzf-s -funit-at-a-time
+Linux-Version: 2.6.36.4
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Mini6410 Development Board
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall
+Target-Profile: min6410-minimal
+Target-Profile-Name: MINI6410 (minimal)
+Target-Profile-Packages: kmod-usb-ohci kmod-usb-storage  wireless-tools  block-hotplug uhttpd wpad wpa-supplicant kmod-fs-ext4 kmod-fs-ext3 kmod-fs-ext2  kmod-fs-vfat  kmod-nls-utf8 kmod-nls-cp437  kmod-nls-iso8859-1
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	minimal Package set compatible with the MINI6410 hardware
+@@
+
+Target-Profile: mini6410-full
+Target-Profile-Name: MINI6410 (full)
+Target-Profile-Packages: xserver-xorg xf86-video-glamo xf86-input-tslib enlightenment fso-gsm0710muxd python fso-frameworkd fso-gpsd paroli wireless-tools
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set with accelerated x11-environment and phone-suite (paroli)
+@@
+
+Target: s3c64xx/gec6410
+Target-Board: s3c64xx
+Target-Kernel: 2.6
+Target-Name: GEC6410 Development Board
+Target-Path: target/linux/s3c64xx
+Target-Arch: arm
+Target-Arch-Packages: s3c64xx
+Target-Features: display gpio jffs2 squashfs usb yaffs2
+Target-Depends: 
+Target-Optimization: -O2 -pipe -march=armv6zk -mtune=arm1176jzf-s -funit-at-a-time
+Linux-Version: 2.6.36.4
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	GEC6410 Development Board
+@@
+Default-Packages: base-files libc libgcc busybox dropbear mtd uci opkg udevtrigger hotplug2 dnsmasq iptables ppp ppp-mod-pppoe kmod-ipt-nathelper firewall
+Target-Profile: gec6410-minimal
+Target-Profile-Name: GEC6410 (minimal)
+Target-Profile-Packages: 
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	minimal Package set compatible with the GEC6410 hardware
+@@
+
+Target-Profile: gec6410-full
+Target-Profile-Name: GEC6410 (full)
+Target-Profile-Packages: xserver-xorg xf86-video-glamo xf86-input-tslib enlightenment fso-gsm0710muxd python fso-frameworkd fso-gpsd paroli wireless-tools
+Target-Profile-Config: 
+
+@@
+Target-Profile-Description:
+	Package set with accelerated x11-environment and phone-suite (paroli)
+@@
+
+

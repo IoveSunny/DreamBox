@@ -1,0 +1,17 @@
+Source-Makefile: package/r8101/Makefile
+Package: kmod-r8101
+Submenu: Network Devices
+Version: <LINUX_VERSION>+1.014.00-1
+Depends: @TARGET_x86
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: RealTek RTL-8101E PCIe Fast Ethernet Adapter kernel support
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: r8101-1.014.00.tar.bz2
+Type: ipkg
+Description:  Kernel modules for RealTek RTL-8101E PCI-Express Fast Ethernet adapters.
+http://www.realtek.com.tw/
+@@
+
+

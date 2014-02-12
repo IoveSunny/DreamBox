@@ -1,0 +1,52 @@
+10
+
+dir
+737
+svn://svn.openwrt.org.cn/dreambox/feeds/qpe
+svn://svn.openwrt.org.cn/dreambox
+
+
+
+2013-01-26T01:41:35.027351Z
+648
+richard.nee.cn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74e81aba-36f0-4891-8cfb-1815f9025a0c
+
+qpe-apps
+dir
+
+libs
+dir
+
+games
+dir
+
+qpe-base
+dir
+
+qpe-host
+dir
+
+qpe-examples
+dir
+
+qpe-build
+dir
+
+apps
+dir
+

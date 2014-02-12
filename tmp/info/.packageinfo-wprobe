@@ -1,0 +1,47 @@
+Source-Makefile: package/wprobe/Makefile
+Package: kmod-wprobe
+Submenu: Network Support
+Version: <LINUX_VERSION>+1-1
+Depends: @LINUX_2_6 @(!(TARGET_ps3||TARGET_pxcab||cris)||BROKEN)
+Provides: 
+Build-Depends: PACKAGE_wprobe-export:libipfix
+Section: kernel
+Category: Kernel modules
+Title: Wireless driver probe infrastructure
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description:   A module that exports measurement data from wireless driver to user space
+@@
+
+Package: wprobe-util
+Version: 1-1
+Depends: @LINUX_2_6 @(!(TARGET_ps3||TARGET_pxcab||cris)||BROKEN) +kmod-wprobe +libnl-tiny
+Provides: 
+Build-Depends: PACKAGE_wprobe-export:libipfix
+Section: net
+Category: Network
+Title: Wireless measurement utility
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:   wprobe-util uses the wprobe kernel module to query
+  wireless driver measurement data from an interface
+@@
+
+Package: wprobe-export
+Version: 1-1
+Depends: @LINUX_2_6 @(!(TARGET_ps3||TARGET_pxcab||cris)||BROKEN) +wprobe-util
+Provides: 
+Build-Depends: PACKAGE_wprobe-export:libipfix
+Section: net
+Category: Network
+Title: Wireless measurement data exporter
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:   wprobe-export uses the wprobe kernel module to export
+  wireless driver measurement data via the IPFIX protocol
+@@
+
+

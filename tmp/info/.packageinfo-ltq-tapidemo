@@ -1,0 +1,21 @@
+Source-Makefile: package/ltq-tapidemo/Makefile
+Package: ltq-tapidemo
+Menu: 1
+Submenu: Telephony
+Version: 5.1.0.53-1
+Depends: +kmod-ltq-tapi +kmod-ltq-vmmc
+Provides: 
+Section: net
+Category: Network
+Title: TAPIdemo application for Lantiq boards
+Maintainer: John Crispin <blogic@openwrt.org>
+Source: tapidemo-5.1.0.53.tar.gz
+Type: ipkg
+Description: 	Voice Access mini-PBX Demo Application
+http://www.lantiq.com/
+@@
+Config:
+	source "package/ltq-tapidemo/Config.in"
+@@
+
+

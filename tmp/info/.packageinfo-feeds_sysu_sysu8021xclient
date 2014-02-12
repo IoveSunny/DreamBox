@@ -1,0 +1,16 @@
+Source-Makefile: package/feeds/sysu/sysu8021xclient/Makefile
+Package: sysu8021xclient
+Version: 1.0-unstable
+Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: SYSU client by vrqq.srOOrz
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Source: 
+Type: ipkg
+Description:   SYSU client by vrqq.srOOrz
+http://github.com/liuqun/openwrt-feeds-njit/sysu/sysu8021xclient
+@@
+
+
